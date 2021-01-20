@@ -22,7 +22,7 @@
     "embla-carousel": "^2.8.1",
     "focus-visible": "^5.0.2",
     "fontfaceobserver": "^2.1.0",
-    "gsap": "^3.2.5",
+    "gsap": "^3.6.0",
     "picoapp": "^3.4.0"
   },
   "devDependencies": {
