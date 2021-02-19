@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "dhmit"
-  },
   "api": {
-    "projectId": "fxpgvmzc",
+    "projectId": "kq2f9npm",
     "dataset": "production"
+  },
+  "project": {
+    "name": "howtomakespace"
   },
   "plugins": [
     "@sanity/base",

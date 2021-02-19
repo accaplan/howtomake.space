@@ -17,12 +17,7 @@ export default {
       type: 'string',
       options: {
         layout: 'radio',
-        list: [
-          'Staff',
-          'UROP Students',
-          'Former Members',
-          'Steering Committee',
-        ],
+        list: ['Faculty', 'Students', 'Former Members', 'Stewards'],
       },
     },
     {
@@ -32,7 +27,7 @@ export default {
       inputComponent: ConditionalField,
       options: {
         condition: ({ category }) =>
-          category === 'Staff' || category === 'Steering Committee',
+          category === 'Faculty' || category === 'Stewards',
       },
     },
     {
@@ -41,7 +36,7 @@ export default {
       type: 'number',
       inputComponent: ConditionalField,
       options: {
-        condition: ({ category }) => category === 'Staff',
+        condition: ({ category }) => category === 'Faculty',
       },
     },
     {
@@ -56,7 +51,7 @@ export default {
       inputComponent: ConditionalField,
       options: {
         condition: ({ category }) =>
-          category === 'Steering Committee' || category === 'Staff',
+          category === 'Stewards' || category === 'Faculty',
       },
     },
     {
@@ -66,7 +61,7 @@ export default {
       inputComponent: ConditionalField,
       options: {
         condition: ({ category }) =>
-          category === 'UROP Students' || category === 'Former Members',
+          category === 'Student' || category === 'Former Members',
       },
     },
   ],

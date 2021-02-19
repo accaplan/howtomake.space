@@ -44,18 +44,18 @@ module.exports = async function() {
         }
       },
       people {
-        "staff": *[_type == "person" && category == 'Staff' && isAlum != true] | order(seq) {
+        "Faculty": *[_type == "person" && category == 'Faculty' && isAlum != true] | order(seq) {
           name,
           title,
           link
         },
-        "students": *[_type == "person" && category == 'UROP Students'] | order(name) {
+        "students": *[_type == "person" && category == 'Student'] | order(name) {
           name
         },
         "formerUrops": *[_type == "person" && category == 'Former Members'] | order(name) {
           name,
         },
-        "formerStaff": *[_type == "person" && category == 'Staff' && isAlum] | order(seq) {
+        "formerFaculty": *[_type == "person" && category == 'Faculty' && isAlum] | order(seq) {
           name,
           title,
           link

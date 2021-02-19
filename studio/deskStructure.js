@@ -4,7 +4,7 @@ import Emoji from 'react-emoji-render'
 
 export default () =>
   S.list()
-    .title('digitalhumanities.mit.edu')
+    .title('How to Make Space')
     .items([
       S.listItem()
         .title('Landing Page')

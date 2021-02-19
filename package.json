@@ -1,8 +1,8 @@
 {
-  "name": "dhmit-site-2020",
+  "name": "howtomakespace",
   "version": "0.0.1",
-  "repository": "https://github.com/dhmit/dhmit-site-2020.git",
-  "author": "Self Aware <howdy@selfaware.studio>",
+  "repository": "https://github.com/infiniteplaces/dhmit-site-2020.git",
+  "author": "Office Romance <info@romanceoffice.com>",
   "license": "MIT",
   "private": true,
   "scripts": {

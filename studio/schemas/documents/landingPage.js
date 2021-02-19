@@ -126,8 +126,8 @@ export default {
       name: 'people',
       fields: [
         {
-          title: 'Staff',
-          name: 'staff',
+          title: 'Faculty',
+          name: 'Faculty',
           type: 'array',
           of: [
             {
@@ -135,13 +135,13 @@ export default {
               to: [{ type: 'person' }],
               options: {
                 filter: 'category == $category',
-                filterParams: { category: 'Staff' },
+                filterParams: { category: 'Faculty' },
               },
             },
           ],
         },
         {
-          title: 'Steering Committee',
+          title: 'Stewards',
           name: 'steeringCommittee',
           type: 'array',
           of: [
@@ -150,7 +150,7 @@ export default {
               to: [{ type: 'person' }],
               options: {
                 filter: 'category == $category',
-                filterParams: { category: 'Steering Committee' },
+                filterParams: { category: 'Stewards' },
               },
             },
           ],

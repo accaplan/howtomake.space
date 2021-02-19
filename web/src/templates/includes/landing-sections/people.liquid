@@ -5,9 +5,9 @@
   <div class="m:df">
     <div class="m:w50">
       <div class="pl20 m:pl40 l:pl80 pr20 m:pr0 m:pr25 l:pr40 xl:pr80 mb50 m:mb110">
-        <h3 class="mono f16 l:f18 f138 mb15 m:mb30">Staff</h3>
+        <h3 class="mono f16 l:f18 f138 mb15 m:mb30">Faculty</h3>
         <ul>
-          {% for person in people.staff %}
+          {% for person in people.Faculty %}
             <li class="bb pt15 pb10">
                 <h4 class="f18 l:f22 lh113 ls01em mb5">
                     {% if person.link %}
@@ -32,7 +32,7 @@
     </div>
     <div class="m:w50">
       <div class="pl25 pr20 m:pr40 l:pr80 mb30 m:mb65">
-        <h3 class="mono f16 l:f18 f138 mb20 m:mb30">UROP Students</h3>
+        <h3 class="mono f16 l:f18 f138 mb20 m:mb30">Student</h3>
         <ul class="f16 lh1625 ls01em">
           {% for person in people.students %}
             <li class="dib">{{ person.name }}{% unless forloop.last %},{% endunless %}</li>
@@ -43,7 +43,7 @@
         <h3 class="mono f16 l:f18 f138 mb20 m:mb30">Program Alumni</h3>
         <ul class="f16 lh1625 ls01em">
 
-          {% for person in people.formerStaff %} 
+          {% for person in people.formerFaculty %} 
               <li class="f16 lh1625 ls01em mb5">
               <h4 class="db s:di s:mr5">
                 {% if person.link %}
@@ -63,7 +63,7 @@
           {% for person in people.formerUrops %}
             <li class="dib">{{ person.name }}{% unless forloop.last %},{% endunless %}</li>
         {% endfor %}
-        <p class="s:di o80 i lh150">UROP Students</p>
+        <p class="s:di o80 i lh150">Student</p>
 
         </ul>
       </div>
