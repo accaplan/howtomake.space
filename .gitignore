@@ -15,3 +15,6 @@ web/src/templates/includes/_manifest.json
 .idea
 # vscode settings
 .vscode
+
+# Local Netlify folder
+.netlify
