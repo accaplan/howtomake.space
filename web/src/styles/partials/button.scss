@@ -5,8 +5,8 @@
 
   &:hover {
     color: $tan;
-    background-color: $teal;
-    border-color: $teal;
+    background-color: $orange;
+    border-color: $orange;
   }
 
   &--tan {
@@ -14,7 +14,7 @@
 
     &:hover {
       background-color: $tan;
-      color: $teal;
+      color: $orange;
     }
   }
 }
