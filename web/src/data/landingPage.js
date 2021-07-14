@@ -39,6 +39,10 @@ module.exports = async function() {
         title,
         publishAt,
         'slug': slug.current,
+        link {
+          title,
+          url,
+        },
       },
       newsletterCta,
       "events": *[_type == 'event' && metadata.startDatetime > now()] [0..3] | order(metadata.startDatetime) {
