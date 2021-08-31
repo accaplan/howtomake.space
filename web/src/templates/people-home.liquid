@@ -27,7 +27,7 @@ permalink: /people/
         <ul class="df fw mhn5 s:mhn10 m:mhn15 mb20">
           {% for person in module.group.people %}
             <li class="w50 m:w25 ph5 s:ph10 m:ph15 mb60">
-              {% if module.group.hasDetailPages %}
+              {% if person.bio %}
                 <a class="card-hover" href="/person/{{ person.slug }}/">
               {% endif %}
                 {% include lazy-image,
@@ -41,7 +41,7 @@ permalink: /people/
                 {% if module.showSubtitles %}
                   <p class="f12 s:f14 m:f18 lh140 ls02em c-blue-muted">{{ person.title }}</p>
                 {% endif %}
-              {% if module.group.hasDetailPages %}
+              {% if person.bio %}
                 </a>
               {% endif %}
             </li>
