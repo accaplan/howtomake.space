@@ -6,6 +6,9 @@ pagination:
   data: postSettings.collections
   size: 1
 ---
+<!-- note, this is ONLY used for apply, so RA (2021-09-02) just hacked in
+     Fall specific info onto this template for now -->
+
 <div class="x oh" data-router-view>
   <div class="rel pt100 s:pt150 l:pt180 mb100 ph20 m:ph40 l:ph80">
     <div class="x max-w800">
@@ -14,11 +17,47 @@ pagination:
         description: p.description,
         padding: false
       %}
-    </div>
-    <div class="texture--2 l:abs right bottom df jce">
-      {% include texture %}
+
+      <h2 class="serif f21 m:f27 lh125 mb15">
+        UROP Fall 2021 Info Session - September 8, 4-5 pm on Zoom
+      </h2>
+      <div class="rich-text f16 m:f18 l:f24 lh150 ls02em mb30 l:mb40 max-w960">
+        <div>
+          <p>
+            <a href='https://mit.zoom.us/meeting/register/tJYrcO6ppj0tGdWK0tajG02SuXBUzaHkrRFl'>
+              Sign up here</a> to learn more about the lab!
+            Attendance at this meeting is highly encouraged but not required to join the lab.
+          </p>
+        </div>
+      </div>
+
+
+      <h2 class="serif f21 m:f27 lh125 mb15">
+        Fall 2021 UROP Projects
+      </h2>
+      <div class="rich-text f16 m:f18 l:f24 lh150 ls02em mb30 l:mb40 max-w960">
+        <div>
+          <p>
+            Most Fall 2021 DH UROPs will work on the project "Sonification Toolkit for Musicians" with this semester's DH Faculty Fellow, Evan Ziporyn. UROPs will develop a 'sonification toolkit,' a set of flexible digital tools that will enable the conversion of data such as images, text, and statistics into sound and music. These tools will allow users to modify and adapt the ways the data is expressed to design and sculpt sound that is aesthetically satisfying and analytically illuminating. No music background or programming experience is required—we'll be building digital synthesizers from scratch in code and learning by doing.
+          </p>
+          <p>
+            A smaller number of UROPs will work on updating, maintaining, and enhancing past projects on language learning (Emerging Technologies for Language Learning), visual analysis and machine learning (This was Paris in 1970), and natural language processing (Gender Analysis Toolkit).
+          </p>
+
+          <p>
+          <a href='https://forms.gle/VtBrMibr3ikB6TRU9'>Apply now! Deadline Wed, 9/8 at 11:59 pm.</a>
+          </p>
+
+        </div>
+      </div>
+
     </div>
   </div>
+<div>
+
+</div>
+
+<!-- We can reinstate this later once we think of how to use the Apply page better...
   <div>
     <div class="ph20 m:ph40 l:ph80">
       {% assign length = p.posts | size %}
@@ -72,5 +111,7 @@ pagination:
       {% endif %}
     </div>
   </div>
+-->
+
   {% include footer %}
 </div>
