@@ -1,0 +1,29 @@
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+    types: [closed]
+
+jobs:
+  update_staging:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout with all depth
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup git config email
+        run: git config --global user.email "rahmed@mit.edu"
+      - name: Setup git config username
+        run: git config --global user.name "Automated Tech Updater"
+      - name: Checkout staging
+        run: git checkout staging
+      - name: Merge master
+        run: git merge --no-edit master
+      - name: Push
+        run: git push
+      - name: Return to master to avoid side effects
+        run: git checkout master
