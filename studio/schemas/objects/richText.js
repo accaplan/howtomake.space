@@ -10,7 +10,6 @@ export default {
       of: [
         {
           type: 'block',
-          styles: [],
           lists: [],
           marks: { decorators: [] },
         },
